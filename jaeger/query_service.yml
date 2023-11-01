@@ -8,6 +8,7 @@ metadata:
     app.kubernetes.io/version: "1.45.0"
     app.kubernetes.io/component: service-query
 spec:
+# comment the clusterIP line to make the service - headless
   clusterIP: None
   ports:
     - name: http-query
